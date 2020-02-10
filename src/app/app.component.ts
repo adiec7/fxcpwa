@@ -8,3 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'fxScience';
 }
+window.onload = () => {
+  const element = document.querySelector('video');
+  element.muted = true;
+  element.autoplay = true;
+};
