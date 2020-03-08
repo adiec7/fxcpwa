@@ -1,0 +1,90 @@
+section{
+  position: absolute;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  background:  #ddd;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+#services{
+  background-image:linear-gradient(rgba(0,0,0, 0.075), rgba(0,0,0, 0.075)),url(../../assets/img/IMG-20200212-WA0019.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#services h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: #2892d0;
+  font-weight: 900;
+  padding-top: 1rem;
+}
+.maimbox{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  text-align: center;
+}
+.subbox{
+  padding: 10px;
+  /* background: #fff; */
+  /* box-shadow:  0 0.125rem 0.25rem  rgba(0,0,0, 0.075) !important; */
+   margin: 1rem;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+}
+.subbox:hover{
+  box-shadow:  0 0.125rem 0.25rem  rgba(0, 0, 0, 0.075) !important;
+}
+img{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+.subbox .text{
+  background: whitesmoke;
+  height: auto;
+  padding: 1rem;
+  text-align: justify;
+  border: 1px solid white;
+}
+.text h5{
+  text-transform: uppercase;
+  text-align: center;
+}
+.text p{
+  text-transform: capitalize;
+  text-align: center;
+}
+.text fa-icon{
+  color: #2892d0;
+}
+ul li{
+  list-style-type: none;
+  text-transform: capitalize;
+}
+.btn{
+  width: 100% !important;
+}
+@media screen and (max-width: 1080px){
+  .maimbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px){
+  .maimbox{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+  }
+}

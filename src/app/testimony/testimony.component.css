@@ -1,0 +1,62 @@
+section{
+  position: absolute;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  background:  #ddd;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+#testimony{
+  background-image: url(../../assets/img/bull.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+#testimony h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: #2892d0;
+  font-weight: 900;
+  padding-top: 1rem;
+}
+#grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin: 1rem;
+}
+/* .gridbox:hover{
+    transform: rotateY(180deg);
+  } */
+img{
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+
+}
+#contact{
+  background: black;
+padding: 0;
+margin: 0;
+}
+#contact p{
+  text-align: center;
+}
+@media screen and (max-width: 1080px){
+  #grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-rows: repeat(2,1fr) !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px){
+  #grid{
+    display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto !important;
+    text-align: center;
+  }
+}

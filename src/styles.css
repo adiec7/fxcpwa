@@ -1,5 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html, body{
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1080px){
+  #grid{
+    display: grid;
+    grid-template-columns:auto !important;
+    /* padding: 3rem; */
+    text-align: center;
+  }
+  .boxes{
+
+    display: grid;
+    grid-template-columns: auto !important;
+
+  }
 }

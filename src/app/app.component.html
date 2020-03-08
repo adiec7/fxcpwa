@@ -3,20 +3,34 @@
 
   <!-- Video Background -->
    <video loop muted autoplay [muted]="'muted'" oncanplay="this.muted=true" id="video-background">
-    <source src="../assets/img/VID-20200123-WA0015.mp4" type="video/mp4">
+    <source src="../assets/img/VID-20200123-WA0015.webm" type="video/webm">
   </video>
-  <div class="video-overlay"><a href="#home"><img id="overlayimg" src="../assets/img/Screenshot_2020-02-08-21-54-49-1.png" alt=""></a></div>
+  <div class="video-overlay"><a href="#home"><img id="overlayimg" src="../assets/img/photo.jpg" alt=""></a>
+    <div class="social-icons">
+      <a href="#" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'whatsapp']" title="Whatsapp"></fa-icon></a>
+      <a href="#" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'telegram']" title="Telegram"></fa-icon></a>
+      <a href="#" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'linkedin']" title="Linkedin"></fa-icon></a>
+      <a href="#" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'instagram']" title="Instragram"></fa-icon></a>
+    </div>
+  </div>
 
    Main Title
    <div class="carousel-caption">
     <h1>Forex science</h1>
-    <p>trade with accuracy while mastering the strategy</p>
-  </div>
-  <div class="social-icons">
-    <a href="" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'whatsapp']" title="Whatsapp"></fa-icon></a>
-    <a href="" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'telegram']" title="Telegram"></fa-icon></a>
-    <a href="" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'linkedin']" title="Linkedin"></fa-icon></a>
-    <a href="" target="_blank" rel="noopener"><fa-icon [icon]="['fab', 'instagram']" title="Instragram"></fa-icon></a>
+    <p>The science of making money using money</p>
+    <p><marquee behavior="scroll" direction="auto">forex trading is risky, we make profit by managing the risk to avoid losing our capital</marquee></p>
   </div>
 </section>
-<app-about-us></app-about-us>
+<section>
+  <app-about-us></app-about-us>
+  </section>
+<section>
+<app-subscription></app-subscription>
+</section>
+<section>
+  <app-testimony></app-testimony>
+</section>
+<div id="contact">
+  <p><strong>forex trading is risky, we make profit by managing the risk to avoid losing our capital.</strong></p>
+</div>
+

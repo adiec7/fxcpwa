@@ -9,7 +9,7 @@
 }
 section{
   min-height: 100vh;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -38,9 +38,10 @@ video {
 }
 #overlayimg{
   float: right ;
-  width: 80px;
-  margin: 40px;
-  border-radius: 50px;
+  width: 70px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border-radius:100% ;
 }
 @media screen and (max-width: 1080px){
   #overlayimg{
@@ -60,21 +61,21 @@ video {
 }
 
 /* Social Icons */
-.social-icons {
-  position: absolute;
-  bottom: 20%;
-  margin-left: 5px;
-
-}
 .social-icons fa-icon {
   font-size: 3rem;
-  color: yellow;
+  color:yellow;
   cursor: pointer;
-  padding: 7.5px 15px;
+  /* padding: 7.5px 15px; */
+  display: block;
+  text-align: center;
+  margin-left: .45em;
 }
 .social-icons fa-icon:hover {
-  color: #202020;
+  color: red;
   background-color: white;
+  width: 3em;
+  border-radius: 5%;
+  transition: ease-in-out;
 }
 
 /* -- About Section --------------------------------- */
